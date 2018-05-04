@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "inputQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "pdf-png-queue",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueueItem",
+      "queueName": "png-reference-queue",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

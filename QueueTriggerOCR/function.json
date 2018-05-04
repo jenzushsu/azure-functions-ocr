@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "png-reference-queue",
+      "connection": "AzureWebJobsStorage"
+    }
+  ],
+  "disabled": false
+}
